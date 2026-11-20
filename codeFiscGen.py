@@ -1,7 +1,7 @@
 from customtkinter import *
 
 app1 = CTk()
-app1.title('Codice Fiscale Generator')
+app1.title('Generatore Codice Fiscale')
 
 w_px = 350
 h_px = 500
@@ -124,33 +124,33 @@ def calcoloCodiceFiscale():
 
 
 ### Widget per l'interfaccia ###
-CTkLabel(master=app1, font=('', 26), text='Codice Fiscale Generator').pack(pady=5)
+CTkLabel(master=app1, font=('', 26), text='Generatore Codice Fiscale').pack(pady=5)
 
 sessoMenu = CTkOptionMenu(master=app1, values=sessoList)
 sessoMenu.pack(pady=10)
 
 cognome = CTkEntry(master=app1, placeholder_text='Cognome')
 cognome.pack(pady=10)
-cognome.insert(0, "villardita")
+# cognome.insert(0, "")
 nome = CTkEntry(master=app1, placeholder_text='Nome')
 nome.pack(pady=10)
-nome.insert(0, "antonio")
+# nome.insert(0, "")
 
 anno = CTkEntry(master=app1, placeholder_text='Anno')
 anno.pack(pady=10)
-anno.insert(0, "1996")
+# anno.insert(0, "")
 mese = CTkEntry(master=app1, placeholder_text='Mese')
 mese.pack(pady=10)
-mese.insert(0, "maggio")
+# mese.insert(0, "")
 giorno = CTkEntry(master=app1, placeholder_text='Giorno')
 giorno.pack(pady=10)
-giorno.insert(0, "9")
+# giorno.insert(0, "")
 
 codCatastEntry = CTkEntry(master=app1, placeholder_text='Comune')
 codCatastEntry.pack(pady=10)
-codCatastEntry.insert(0, "palermo")
+# codCatastEntry.insert(0, "")
 
-btnCalcola = CTkButton(master=app1, command=calcoloCodiceFiscale, text='Calcola!')
+btnCalcola = CTkButton(master=app1, command=calcoloCodiceFiscale, text='Calcola')
 btnCalcola.pack(pady=10)
 
 lbl_Finale = CTkLabel(master=app1, font=('', 30), text="")
